@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tokosmile/theme/theme.dart';
+import 'package:tokosmile/components/product_list.dart';
+import 'package:tokosmile/data/sample_data.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -11,48 +12,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    var colors = context.colors();
-    var theme = context.textTheme();
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          widget.title,
-          style: theme.titleLarge
-              ?.copyWith(color: colors.onPrimary),
-        ),
-        backgroundColor: Colors.transparent,
+      body: Container(
+        padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+        child: ProductList(products: sampleProducts),
       ),
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'You have pushed the button this many times:',
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
