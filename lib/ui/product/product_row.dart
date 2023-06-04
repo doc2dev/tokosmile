@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
-import 'package:tokosmile/components/product_item.dart';
+import 'package:flutter/material.dart';
 
-import '../data/data_classes.dart';
+import '../../data/data_classes.dart';
+import 'product_item.dart';
 
 class ProductRow extends StatelessWidget {
   final List<Product> pair;

@@ -21,3 +21,19 @@ class Product {
     required this.category,
   });
 }
+
+class CarouselData {
+  final String hashTag;
+  final String title;
+  final String subtitle;
+  final String imageFile;
+  final String callToAction;
+
+  CarouselData({
+    required this.hashTag,
+    required this.title,
+    required this.subtitle,
+    required this.imageFile,
+    required this.callToAction,
+  });
+}

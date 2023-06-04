@@ -137,3 +137,20 @@ var sampleProducts = [
     category: "Bag",
   ),
 ];
+
+var sampleCarousel = [
+  CarouselData(
+    hashTag: "#FASHION DAY",
+    title: "80% OFF",
+    subtitle: "Discover fashion that suits to your style",
+    imageFile: "images/carousel_1.png",
+    callToAction: "Check this out",
+  ),
+  CarouselData(
+    hashTag: "#BEAUTYSALE",
+    title: "DISCOVER OUR BEAUTY SELECTION",
+    subtitle: "",
+    imageFile: "images/carousel_2.png",
+    callToAction: "Check this out",
+  ),
+];
