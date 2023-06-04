@@ -71,9 +71,16 @@ class HeaderDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   double get minExtent => kTopBarHeight +
-      kProductHeaderHeight;
+      kProductHeaderHeight - 10;
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
       true;
 }
+
+/*TODO:
+* - carousel auto-animation
+* - bottom navigation
+* - product detail view
+* - bloc integration
+* */

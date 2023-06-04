@@ -38,16 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             body: ProductList(products: sampleProducts),
           ),
-          /*CustomScrollView(
-            slivers: [
-              CarouselSliver(
-                items: sampleCarousel,
-                onScrollChange: _updateScrollProgress,
-              ),
-              ProductHeaderSliver(),
-              ProductList(products: sampleProducts),
-            ]
-          ),*/
           TopBar(
             alpha: _scrollProgress * 2,
           ),

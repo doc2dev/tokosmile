@@ -9,12 +9,9 @@ class ProductHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 24.0),
+      color: context.colors().background,
       height: kProductHeaderHeight,
-      color: Colors.lightGreen,
-      child: Center(
-        child: Text("Product header content goes here"),
-      ),
-      /*child: Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
@@ -25,7 +22,7 @@ class ProductHeader extends StatelessWidget {
           ),
           TextButton(
             style: TextButton.styleFrom(
-              textStyle: context.textTheme().bodyLarge!.copyWith(
+              textStyle: context.textTheme().titleSmall!.copyWith(
                 color: context.colors().primary,
               ),
             ),
@@ -33,7 +30,7 @@ class ProductHeader extends StatelessWidget {
             child: const Text('See more'),
           )
         ],
-      ),*/
+      ),
     );
   }
 }
