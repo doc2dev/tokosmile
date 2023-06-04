@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokosmile/ui/constants.dart';
 
 import '../../data/data_classes.dart';
 import 'product_row.dart';
@@ -42,14 +43,6 @@ class _ProductListState extends State<ProductList> {
   @override
   Widget build(BuildContext context) {
     var pairs = getPairs();
-    /*return SliverList(
-      delegate: SliverChildBuilderDelegate(
-        (BuildContext context, int index) {
-          return ProductRow(pair: pairs[index]);
-        },
-        childCount: pairs.length,
-      ),
-    );*/
     return Container(
       padding: const EdgeInsets.only(left: 16.0, right: 16.0),
       child: ListView.builder(

@@ -19,6 +19,7 @@ class PinkBadge extends StatelessWidget {
     var tertiaryColor = colors.tertiary;
     var style = context.textTheme().bodySmall!.copyWith(
           color: colors.onTertiary,
+      fontSize: 9.0,
         );
 
     return SizedBox(
@@ -34,11 +35,11 @@ class PinkBadge extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 32.0,
+            bottom: 24.0,
             right: 5.0,
             child: Container(
-              width: 24.0,
-              height: 16.0,
+              width: 18.0,
+              height: 12.0,
               decoration: roundedCorner(
                 radius: 3.0,
                 bgColor: tertiaryColor,

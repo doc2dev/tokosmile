@@ -36,7 +36,7 @@ class TopBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Flexible(
-                  flex: 7,
+                  flex: 14,
                   child: Container(
                     height: 48,
                     decoration: roundedCorner(
@@ -66,7 +66,7 @@ class TopBar extends StatelessWidget {
                   ),
                 ),
                 Flexible(
-                  flex: 3,
+                  flex: 6,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const [
