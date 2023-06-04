@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tokosmile/data/sample_data.dart';
 import 'package:tokosmile/ui/carousel/carousel_sliver.dart';
-import 'package:tokosmile/ui/product/product_container.dart';
-import 'package:tokosmile/ui/product/product_header_sliver.dart';
 import 'package:tokosmile/ui/product/product_list.dart';
 import 'package:tokosmile/ui/topbar/topbar.dart';
 
