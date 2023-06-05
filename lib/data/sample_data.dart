@@ -6,7 +6,7 @@ var sampleProducts = [
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/product_1.jpg",
       "images/product_2.jpg",
@@ -21,7 +21,7 @@ var sampleProducts = [
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/product_2.jpg",
       "images/product_3.jpg",
@@ -36,7 +36,7 @@ var sampleProducts = [
     description: "Essentials Women's Bag Long Strap",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/bag_2.jpg",
       "images/bag_3.jpg",
@@ -51,7 +51,7 @@ var sampleProducts = [
     description: "Essentials Men's Short-Sleeve Crewneck T-Shirt",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/product_3.jpg",
       "images/product_4.jpg",
@@ -66,7 +66,7 @@ var sampleProducts = [
     description: "Essentials Men's Regular-Fit Long-Sleeve Oxford T-Shirt",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/product_4.jpg",
       "images/product_5.jpg",
@@ -81,7 +81,7 @@ var sampleProducts = [
     description: "Essentials Women's Bag Long Strap",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/bag_1.jpg",
       "images/bag_2.jpg",
@@ -96,7 +96,7 @@ var sampleProducts = [
     description: "Essentials Men's Regular-Fit Long-Sleeve Oxford T-Shirt",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/product_5.jpg",
       "images/product_1.jpg",
@@ -111,7 +111,7 @@ var sampleProducts = [
     description: "Essentials Women's Bag Long Strap",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/bag_3.jpg",
       "images/bag_4.jpg",
@@ -126,7 +126,7 @@ var sampleProducts = [
     description: "Just a Women's Bag Long Strap",
     avgRating: 4.9,
     numOfReviews: 2356,
-    itemsSold: 100,
+    itemsSold: 2934,
     images: [
       "images/bag_2.jpg",
       "images/bag_1.jpg",

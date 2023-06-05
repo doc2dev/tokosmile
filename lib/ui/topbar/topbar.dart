@@ -34,8 +34,8 @@ class TopBar extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Flexible(
-                  flex: 14,
+                Expanded(
+                  flex: 1,
                   child: Container(
                     height: 48,
                     decoration: roundedCorner(
@@ -64,21 +64,17 @@ class TopBar extends StatelessWidget {
                     ),
                   ),
                 ),
-                Flexible(
-                  flex: 6,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: const [
-                      PinkBadge(
-                        iconData: Icons.shopping_bag_outlined,
-                        badgeLabel: "1",
-                      ),
-                      PinkBadge(
-                        iconData: Icons.comment_outlined,
-                        badgeLabel: "9+",
-                      ),
-                    ],
-                  ),
+                const Row(
+                  children: [
+                    PinkBadge(
+                      iconData: Icons.shopping_bag_outlined,
+                      badgeLabel: "1",
+                    ),
+                    PinkBadge(
+                      iconData: Icons.comment_outlined,
+                      badgeLabel: "9+",
+                    ),
+                  ],
                 ),
               ],
             ),

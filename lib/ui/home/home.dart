@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tokosmile/data/sample_data.dart';
 import 'package:tokosmile/ui/carousel/carousel_sliver.dart';
 import 'package:tokosmile/ui/product/product_list.dart';
+import 'package:tokosmile/ui/productdetail/product_detail.dart';
 import 'package:tokosmile/ui/topbar/topbar.dart';
 
+import '../../data/data_classes.dart';
 import 'bottom_nav.dart';
 
 class MyHomePage extends StatefulWidget {

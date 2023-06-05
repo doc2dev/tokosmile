@@ -58,8 +58,8 @@ class HeaderDelegate extends SliverPersistentHeaderDelegate {
     return Column(
       children: [
         Expanded(child: Carousel(items: items)),
-        ActionPanel(),
-        ProductHeader(),
+        const ActionPanel(),
+        const ProductHeader(),
       ],
     );
   }
@@ -79,7 +79,7 @@ class HeaderDelegate extends SliverPersistentHeaderDelegate {
 }
 
 /*TODO:
-* - bottom navigation
 * - product detail view
+* - detail view entry animation
 * - bloc integration
 * */

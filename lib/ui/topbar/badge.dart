@@ -39,7 +39,7 @@ class PinkBadge extends StatelessWidget {
             right: 5.0,
             child: Container(
               width: 18.0,
-              height: 12.0,
+              height: 15.0,
               decoration: roundedCorner(
                 radius: 3.0,
                 bgColor: tertiaryColor,

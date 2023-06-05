@@ -16,7 +16,7 @@ class _AppState extends State<App> {
     return MaterialApp(
       title: 'Tokosmile',
       theme: lightTheme,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Tokosmile'),
       debugShowCheckedModeBanner: false,
     );
   }

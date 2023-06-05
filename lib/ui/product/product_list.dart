@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tokosmile/theme/theme.dart';
 
 import '../../data/data_classes.dart';
+import '../productdetail/product_detail.dart';
 import 'product_row.dart';
 
 class ProductList extends StatelessWidget {
@@ -24,6 +25,13 @@ class ProductList extends StatelessWidget {
     return pairs;
   }
 
+  void _navigateToDetail(Product product, BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ProductDetail(product: product)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var pairs = getPairs();
@@ -35,7 +43,12 @@ class ProductList extends StatelessWidget {
         itemCount: pairs.length,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
-          return ProductRow(pair: pairs[index]);
+          return ProductRow(
+            pair: pairs[index],
+            onProductItemClick: (product) {
+              _navigateToDetail(product, context);
+            },
+          );
         },
       ),
     );
