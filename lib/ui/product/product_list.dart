@@ -1,33 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:tokosmile/ui/constants.dart';
+import 'package:tokosmile/theme/theme.dart';
 
 import '../../data/data_classes.dart';
 import 'product_row.dart';
 
-class ProductList extends StatefulWidget {
+class ProductList extends StatelessWidget {
   final List<Product> products;
 
   const ProductList({super.key, required this.products});
 
-  @override
-  State<StatefulWidget> createState() => _ProductListState();
-}
-
-class _ProductListState extends State<ProductList> {
-  late final ScrollController _scrollController;
-
-  @override
-  void initState() {
-    super.initState();
-    _scrollController = ScrollController();
-    /*_scrollController.addListener(() {
-      print("Current scroll: ${_scrollController.offset}");
-    });*/
-  }
-
   List<List<Product>> getPairs() {
     var pairs = <List<Product>>[];
-    for (var element in widget.products) {
+    for (var element in products) {
       if (pairs.isEmpty) {
         pairs.add([]);
       }
@@ -45,21 +29,15 @@ class _ProductListState extends State<ProductList> {
     var pairs = getPairs();
     return Container(
       padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+      color: context.colors().surfaceVariant,
       child: ListView.builder(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         itemCount: pairs.length,
         shrinkWrap: true,
-        controller: _scrollController,
         itemBuilder: (BuildContext context, int index) {
           return ProductRow(pair: pairs[index]);
         },
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    _scrollController.dispose();
-    super.dispose();
   }
 }

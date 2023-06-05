@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tokosmile/home.dart';
+import 'package:tokosmile/ui/home/home.dart';
 import 'package:tokosmile/theme/theme.dart';
 
 

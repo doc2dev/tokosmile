@@ -79,7 +79,6 @@ class HeaderDelegate extends SliverPersistentHeaderDelegate {
 }
 
 /*TODO:
-* - carousel auto-animation
 * - bottom navigation
 * - product detail view
 * - bloc integration

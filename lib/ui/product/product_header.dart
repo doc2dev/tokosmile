@@ -8,11 +8,12 @@ class ProductHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 24.0),
-      color: context.colors().background,
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0),//fromLTRB(16.0, 24.0, 16.0, 24.0),
+      color: context.colors().surfaceVariant,
       height: kProductHeaderHeight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             "Best Sale Product",

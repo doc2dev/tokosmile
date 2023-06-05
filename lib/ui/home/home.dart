@@ -4,6 +4,8 @@ import 'package:tokosmile/ui/carousel/carousel_sliver.dart';
 import 'package:tokosmile/ui/product/product_list.dart';
 import 'package:tokosmile/ui/topbar/topbar.dart';
 
+import 'bottom_nav.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -43,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+      bottomNavigationBar: const BottomNav(),
     );
   }
 }

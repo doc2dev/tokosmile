@@ -17,7 +17,6 @@ class TopBar extends StatelessWidget {
     var opacity = min(alpha, 1.0);
     var colors = context.colors();
     var outlineColor = colors.outline;
-    var secondaryColor = colors.secondary;
     var hintStyle =
         context.textTheme().labelLarge!.copyWith(color: outlineColor);
 
